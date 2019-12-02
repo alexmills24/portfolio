@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  width: 100vw;
+  background-color: grey;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+nav > ul > a > li {
+  list-style: none;
+  color: white;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/mountains.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: black;
+  background-color: grey;
+}
+
+h3 {
+  color: black;
+}
+
+#tug-of-war,
+#bouncing-balls {
+  height: 200px;
+  width: 350px;
+}
+
+.portfolio-links {
+  background-color: grey;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.portfolio-links:hover {
+  text-decoration: none;
+  background-color: darkslategrey;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: darkslategrey;
+}
+
+footer {
+  margin-top: 5px;
+  height: 150px;
+  width: 100vw;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hover-box,
+.hover-box-layer_bottom {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-box-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.hover-box-layer_top:hover {
+  opacity: 1;
+}
