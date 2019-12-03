@@ -43,7 +43,8 @@ h3 {
 
 #tug-of-war,
 #bouncing-balls,
-#in-collaboration {
+#in-collaboration,
+#morsecode {
   height: 200px;
   width: 350px;
 }
@@ -80,6 +81,7 @@ footer {
 .hover-box-layer_bottom {
   position: relative;
   display: inline-block;
+  width: 350px;
 }
 
 .hover-box-layer_top {
@@ -90,6 +92,7 @@ footer {
   bottom: 0;
   left: 0;
   text-align: center;
+  width: 350px;
 }
 
 .hover-box-layer_top:hover {
@@ -106,8 +109,15 @@ a > i:hover {
 }
 
 #portfolio-items {
-  display: flex;
-  justify-content: space-between;
+  display: grid inline-block;
+  align-content: center;
+  margin: 50px;
+}
+
+.description {
+  border: 1px solid black;
+  text-align: center;
+  width: 350px;
 }
 
 @media only screen and (max-width: 600px) {
