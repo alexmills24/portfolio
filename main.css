@@ -2,11 +2,13 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
 nav {
   position: fixed;
   width: 100vw;
   background-color: grey;
 }
+
 nav > ul {
   display: flex;
   justify-content: space-around;
@@ -68,15 +70,6 @@ nav > ul > a:hover {
   background-color: darkslategrey;
 }
 
-footer {
-  margin-top: 5px;
-  height: 100px;
-  width: 100vw;
-  background-color: grey;
-  display: flex;
-  justify-content: space-around;
-}
-
 .hover-box,
 .hover-box-layer_bottom {
   position: relative;
@@ -118,6 +111,15 @@ a > i:hover {
   border: 1px solid black;
   text-align: center;
   width: 350px;
+}
+
+footer {
+  margin-top: 5px;
+  height: 100px;
+  width: 100vw;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 600px) {
