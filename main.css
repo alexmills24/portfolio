@@ -95,3 +95,11 @@ footer {
 .hover-box-layer_top:hover {
   opacity: 1;
 }
+
+a > i {
+  color: white;
+}
+
+a > i:hover {
+  color: whitesmoke;
+}
