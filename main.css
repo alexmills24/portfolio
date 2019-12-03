@@ -31,6 +31,10 @@ header {
 h1 {
   color: black;
   background-color: grey;
+  width: 95%;
+  text-align: center;
+  opacity: 0.75;
+  padding: 5px;
 }
 
 h3 {
@@ -56,7 +60,7 @@ h3 {
   background-color: darkslategrey;
 }
 
-a:hover {
+nav > ul > a:hover {
   color: white;
   text-decoration: none;
   background-color: darkslategrey;
