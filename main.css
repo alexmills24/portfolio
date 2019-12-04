@@ -26,6 +26,7 @@ header {
   background-image: url(images/mountains.jpg);
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -43,53 +44,10 @@ h3 {
   color: black;
 }
 
-#tug-of-war,
-#bouncing-balls,
-#in-collaboration,
-#morsecode {
-  height: 200px;
-  width: 350px;
-}
-
-.portfolio-links {
-  background-color: grey;
-  padding: 5px;
-  color: white;
-  text-align: center;
-  display: inline-block;
-}
-
-.portfolio-links:hover {
-  text-decoration: none;
-  background-color: darkslategrey;
-}
-
 nav > ul > a:hover {
   color: white;
   text-decoration: none;
   background-color: darkslategrey;
-}
-
-.hover-box,
-.hover-box-layer_bottom {
-  position: relative;
-  display: inline-block;
-  width: 350px;
-}
-
-.hover-box-layer_top {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  width: 350px;
-}
-
-.hover-box-layer_top:hover {
-  opacity: 1;
 }
 
 a > i {
@@ -101,16 +59,14 @@ a > i:hover {
   color: whitesmoke;
 }
 
-#portfolio-items {
-  display: grid inline-block;
-  align-content: center;
-  margin: 50px;
+.carousel-item {
+  height: 80vh;
 }
 
 .description {
-  border: 1px solid black;
-  text-align: center;
-  width: 350px;
+  background-color: grey;
+  opacity: 0.85;
+  color: black;
 }
 
 footer {
@@ -122,9 +78,19 @@ footer {
   justify-content: space-around;
 }
 
+.description {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  #portfolio-items {
-    display: flex;
-    flex-direction: column;
+  main {
+    height: 100%;
+  }
+  .d-block {
+    height: 65%;
+  }
+  .description {
+    text-align: center;
+    display: block;
   }
 }
