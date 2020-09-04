@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2"
